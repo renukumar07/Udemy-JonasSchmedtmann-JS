@@ -382,6 +382,7 @@ if (scoreDolphins > scoreKoalas && scoreDolphins > 100) {
 }
 */
 
+/*
 const day = 'monday';
 switch (day) {
   case 'monday': //day==='monday'
@@ -420,3 +421,13 @@ if (day === 'monday') {
 } else {
   console.log('No a valid day!');
 }
+*/
+
+3 * 4;
+1991;
+true && false && !false;
+if (23 > 10) {
+  const str = '23 is bigger';
+}
+const me = 'Jonas';
+console.log(`I'm ${2037 - 1991} years old ${me}`);
