@@ -247,6 +247,7 @@ if (markBMI > johnBMI) {
 
 // 5 falsy values: 0, '',undefined, null, NaN
 
+/*
 console.log(Boolean(0)); //false
 console.log(Boolean(undefined)); //false
 console.log(Boolean('Jonas')); //true
@@ -272,4 +273,28 @@ if (height) {
   console.log('YAY! Height is defined');
 } else {
   console.log('Height is undefined');
+}
+*/
+
+const age = 18;
+if (age === 18) console.log('you just became an adult:D(Strict)');
+
+if (age == 18) console.log('you just became an adult:D(loose');
+
+const favourite = prompt("What's your faviourite number?");
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) {
+  console.log('Cool! 23 is an amazing number!');
+} else if (favourite === 7) {
+  console.log('7 is also a cool number');
+} else if (favourite === 9) {
+  console.log('9 is also a cool number');
+} else {
+  console.log('Number is not 23 or 7');
+}
+
+if (favourite !== 23) {
+  console.log('why not 23?');
 }
