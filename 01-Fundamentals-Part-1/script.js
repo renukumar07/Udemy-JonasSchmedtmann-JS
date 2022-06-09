@@ -225,22 +225,51 @@ if (markBMI > johnBMI) {
 }
 */
 
-//Type Conversion
-const inputYear = '1991';
-console.log(Number(inputYear), inputYear); //1991
-console.log(Number(inputYear) + 18); //199118
+// //Type Conversion
+// const inputYear = '1991';
+// console.log(Number(inputYear), inputYear); //1991
+// console.log(Number(inputYear) + 18); //199118
 
-console.log(Number('Jonas')); //NaN
-console.log(typeof NaN); //number
+// console.log(Number('Jonas')); //NaN
+// console.log(typeof NaN); //number
 
-console.log(String(23));
+// console.log(String(23));
 
-//type coercion
-console.log('I am' + 23 + ' years old');
-console.log('23' - '10' - 3);
-console.log('23' / '2');
+// //type coercion
+// console.log('I am' + 23 + ' years old');
+// console.log('23' - '10' - 3);
+// console.log('23' / '2');
 
-//Guess the Output
-let n = '1' + 1;
-n = n - 1;
-console.log(n);
+// //Guess the Output
+// let n = '1' + 1;
+// n = n - 1;
+// console.log(n);
+
+// 5 falsy values: 0, '',undefined, null, NaN
+
+console.log(Boolean(0)); //false
+console.log(Boolean(undefined)); //false
+console.log(Boolean('Jonas')); //true
+console.log(Boolean({})); //true
+console.log(Boolean('')); //false
+
+const money = 0;
+if (money) {
+  console.log("Don't spend it all ;)");
+} else {
+  console.log('You should get a job!'); //else will get executed
+}
+
+money = 100;
+if (money) {
+  console.log("Don't spend it all ;)"); //Executed
+} else {
+  console.log('You should get a job!');
+}
+
+let height;
+if (height) {
+  console.log('YAY! Height is defined');
+} else {
+  console.log('Height is undefined');
+}
