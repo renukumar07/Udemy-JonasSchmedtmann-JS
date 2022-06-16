@@ -219,6 +219,7 @@ if (friends.includes('Steven')) {
 }
 */
 
+/*
 // Coding Challenge #2
 // Steven is still building his tip calculator, using the same rules as before: Tip 15% of the bill if the bill value is between 50 and 300, and if the value is different, the tip is 20%.
 // Your tasks:
@@ -249,3 +250,19 @@ total.push(bills[0] + calcTip(bills[0]));
 total.push(bills[1] + calcTip(bills[1]));
 total.push(bills[2] + calcTip(bills[2]));
 console.log(total);
+*/
+
+const jonasArray = [
+  'Jonas',
+  'Schmedtmann',
+  2037 - 1991,
+  'teacher',
+  ['Michael', 'Peter', 'Steven'],
+];
+const jonas = {
+  firstName: 'Jonas',
+  lastName: 'Schmedtmann',
+  age: 2037 - 1991,
+  job: 'teacher',
+  friends: ['Michael', 'Peter', 'Steven'],
+};
