@@ -348,6 +348,7 @@ jonas.getSummary();
 // Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
 // GOOD LUCK 😀
 
+/*
 const mark = {
   fullName: 'Mark Miller',
   mass: 78,
@@ -377,3 +378,20 @@ mark.bmi > john.bmi
   : console.log(
       `${mark.fullName} BMI ${mark.bmi} is higher than ${john.fullName} (${john.bmi})`
     );
+*/
+
+// console.log('Lifting weights repetition 1');
+// console.log('Lifting weights repetition 2');
+// console.log('Lifting weights repetition 3');
+// console.log('Lifting weights repetition 4');
+// console.log('Lifting weights repetition 5');
+// console.log('Lifting weights repetition 6');
+// console.log('Lifting weights repetition 7');
+// console.log('Lifting weights repetition 8');
+// console.log('Lifting weights repetition 9');
+// console.log('Lifting weights repetition 10');
+
+// for loop keeps runnign while condition is TRUE
+for (let rep = 1; rep <= 30; rep++) {
+  console.log(`Lifting weights repetition ${rep}`);
+}
