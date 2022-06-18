@@ -252,6 +252,7 @@ total.push(bills[2] + calcTip(bills[2]));
 console.log(total);
 */
 
+/*
 const jonasArray = [
   'Jonas',
   'Schmedtmann',
@@ -296,3 +297,42 @@ jonas['twitter'] = '@jonasschmedtman';
 
 const str = `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`;
 console.log(str);
+*/
+
+const jonas = {
+  firstName: 'Jonas',
+  lastName: 'Schmedtmann',
+  birthYear: 1991,
+  job: 'teacher',
+  friends: ['Michael', 'Peter', 'Steven'],
+  hasDriversLicense: true,
+  // calcAge: function (birthYear) {
+  //   return 2037 - birthYear;
+  // },
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    console.log(
+      `${this.firstName} is a ${this.calcAge()} year old ${this.job}, and ${
+        this.hasDriversLicense
+          ? "he has a driver's license"
+          : "he doesn't have a driver's license"
+      }`
+    );
+  },
+};
+// console.log(jonas.calcAge(1991));
+// console.log(jonas['calcAge'](1991));
+
+console.log(jonas.calcAge());
+console.log(jonas.age);
+console.log(jonas.age);
+console.log(jonas.age);
+
+//Challenge
+//jonas is a 46 year old teacher, and he has a driver's license
+jonas.getSummary();
